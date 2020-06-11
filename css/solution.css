@@ -1,0 +1,103 @@
+@charset 'utf-8';
+
+/*page-header*/
+.page-header {position: relative; height: 260px; padding: 70px 0 80px; text-align: center; background: #e3e6eb url(../img/bg_page_header_left.jpg) no-repeat left bottom; box-sizing: border-box;}
+.page-header:before {position: absolute; bottom: 0; right: 0; width: 444px; height: 100%; background: url(../img/bg_page_header_right.jpg) no-repeat; content: '';}
+.page-header > h2 {color: #000; font-size: 50px; font-weight: 500; letter-spacing: -0.04em;}
+.page-header .page-head-location {display: inline-block; vertical-align: top; padding-top: 20px;}
+.page-header .page-head-location .page-head-loc {float: left; position: relative; height: 25px; margin-left: 40px; color: #777; font-weight: 300; line-height: 25px;}
+.page-header .page-head-location .loc-home {width: 25px; height: 25px; margin-left: 0; background: url(../img/icon_locate_home.png) no-repeat center center;}
+.page-header .page-head-loc:before {display: block; position: absolute; top: 50%; left: -26px; width: 7px; height: 7px; margin-top: -3px; border-width: 1px 1px 0 0; border-color: #aaa; border-style: solid; transform: rotate(45deg); content: '';}
+.page-header .page-head-loc:first-child:before {display: none;}
+.page-header .page-head-loc.loc-state {color: #000; font-weight: 400;}
+
+/*sub-gnb*/
+.sub-gnb {position: absolute; left: 50%; width: 1100px; min-width: 1100px; margin-top: -30px; margin-left: -550px; text-align: center; background: #20202c; z-index: 50;}
+.sub-gnb .sub-gnb-list {display: inline-block; vertical-align: top;}
+.sub-gnb .sub-gnb-list:after {display: block; clear: both; content: '';}
+.sub-gnb .sub-gnb-list .sub-gnb-item {float: left;}
+.sub-gnb .sub-gnb-list .sub-gnb-item .sub-gnb-link {display: block; position: relative; height: 70px; margin: 0 120px; padding: 22px 10px 0; color: #fff; box-sizing: border-box;}
+.sub-gnb .sub-gnb-list .sub-gnb-item .sub-gnb-link:after {position: absolute; bottom: 0; left: 50%; width: 1px; transition: height .3s ease; height: 20px; background: #12ccc1; content: ''; opacity: 0;}
+.sub-gnb .sub-gnb-list .sub-gnb-item:first-child .sub-gnb-link {color: #12ccc1;}
+.sub-gnb .sub-gnb-list .sub-gnb-item:first-child .sub-gnb-link:after {opacity: 1;}
+.sub-gnb .sub-gnb-list .sub-gnb-item:hover .sub-gnb-link {color: #12ccc1;}
+.sub-gnb .sub-gnb-list .sub-gnb-item:hover .sub-gnb-link:after {opacity: 1;}
+
+.sub-gnb-sub {overflow: hidden; position: absolute; top: 70px; left: 0; width: 100%; height: 60px; line-height: 60px; text-align: center; border-bottom: 1px solid #e5e5e5; background: #fff;}
+.sub-gnb-sub .gnb-sub-list {display: inline-block;}
+.sub-gnb-sub .gnb-sub-item {float: left; margin: 0 50px; color: #888; font-size: 14px;}
+.sub-gnb-sub .gnb-sub-item:hover {color: #000;}
+
+/*solution-about*/
+.solution-about {padding-top: 70px;}
+.page-contents {width: 1100px; margin: 0 auto;}
+.solution-about-desc {padding-top: 80px;}
+
+.solution-about-desc .about-main-tit {position: relative; color: #000; font-size: 16px; font-weight: 500; padding-bottom: 30px;}
+.solution-about-desc .about-main-tit:before {position: absolute; bottom: 20px; left: 0; width: 30px; height: 3px; background: #12ccc1; content: '';}
+.solution-about-desc .about-sub-tit {color: #000; font-size: 32px; font-weight: 300; line-height: 46px;}
+.solution-about-desc .about-sub-tit strong {font-weight: 500;}
+.solution-about-desc .about-txt {padding-top: 20px; padding-bottom: 40px; color: #666; font-size: 16px; font-weight: 300; line-height: 26px;}
+.solution-about-desc .about-txt strong {color: #000; font-weight: 500;}
+
+.solution-info {overflow: hidden; padding-bottom: 70px; border-bottom: 1px solid #e5e5e5;}
+.solution-info-list {margin: 0 -20px;}
+.solution-info-list .solution-info-item {float: left; width: 550px; margin: 10px; padding: 40px; background-color: #f8f8f8; background-position: right 30px center; background-repeat: no-repeat; box-sizing: border-box;}
+.solution-info-list .solution-info-item:nth-child(1) {background-image: url(../img/icon_solution_billoneq_1.png);}
+.solution-info-list .solution-info-item:nth-child(2) {background-image: url(../img/icon_solution_billoneq_2.png);}
+.solution-info-list .solution-info-item:nth-child(3) {background-image: url(../img/icon_solution_billoneq_3.png);}
+.solution-info-list .solution-info-item:nth-child(4) {background-image: url(../img/icon_solution_billoneq_4.png);}
+.solution-info-list .solution-info-item:nth-child(5) {background-image: url(../img/icon_solution_billoneq_5.png);}
+.solution-info-item .solution-info-tit {color: #000; font-size: 18px; font-weight: 500;}
+.solution-info-item .solution-info-txt {color: #666; font-size: 14px; padding-top: 10px;}
+
+/*solution-process*/
+.solution-process {position: relative; background-image: linear-gradient(to top, #e2f6f5 0%, #e2f6f5 598px, #fff 598px, #fff 100%);}
+.solution-process .ice {position: absolute; bottom: 92px; left: 50%; width: 478px; height: 669px; margin-left: -600px; background: url(../img/bg_solution_process.png) no-repeat; content: '';}
+.solution-process-fig {padding-top: 30px; padding-bottom: 30px; padding-left: calc(100% - 772px);}
+
+.solution-about-figcap {display: block; padding-bottom: 30px; color: #000; font-size: 20px; font-weight: 500;}
+
+/*solution-case*/
+.solution-case-tab {padding: 20px 0;}
+.case-tab-list .case-tab-item {float: left; margin-right: 10px;}
+.case-tab-list .case-tab-item .case-tab-link {display: block; width: 112px; line-height: 38px; text-align: center; border: 1px solid #e5e5e5; border-radius: 40px; box-sizing: border-box;}
+.case-tab-list .case-tab-item .case-tab-link:hover, .case-tab-list .case-tab-item .case-tab-active {color: #fff; background: #12ccc1; border: 1px solid #12ccc1;}
+.case-tab-list:after {display: block; clear: both; content: '';}
+
+.solution-case-item {height: 748px; text-align: center; background-repeat: no-repeat; background-position: center bottom; box-sizing: border-box; width: 100%;}
+.solution-case-item:nth-child(1) {background-image: url(../img/bg_solution_billoneq_slide1.jpg);}
+.case-title {padding: 45px 0 35px; color: #fff; font-size: 28px; font-weight: 300; line-height: 40px;}
+.case-title-list {display: inline-block; vertical-align: top;}
+.case-title-list:after {display: block; clear: both; content: '';}
+.case-title-item {float: left; position: relative; padding: 0 35px; text-align: center;}
+.case-title-item > span {font-weight: 500; color: #12ccc1;}
+.case-title-item:before {position: absolute; top: 50%; right: -3px; width: 6px; height: 6px; margin-top: -3px; border-radius: 50%; background: #fff; content: '';}
+.case-title-item:last-child:before {display: none;}
+
+.case-function {padding: 30px 50px; text-align: left; background: rgba(0,0,0,.3);}
+.case-function:after {display: block; clear: both; content: '';}
+.case-function > dt {float: left; color: #fff; font-size: 18px; font-weight: 700; line-height: 38px;}
+.case-function > dd {margin-left: 110px; padding-left: 70px; color: #fff; font-size: 15px; font-weight: 300; line-height: 24px; border-left: 1px solid #444;}
+.case-function > dd > span {color: #f8605c;}
+.case-figure {padding-top: 15px;}
+
+/*solution-banner*/
+.solution-banner {height: 146px; margin-top: 25px; margin-bottom: 50px; padding: 35px 60px 35px 320px; background: url(../img/bg_solution_billoneq_banner.jpg) no-repeat; box-sizing: border-box;}
+.solution-banner:after {display: block; clear: both; content: '';}
+.solution-banner > dt {float: left; color: #fff; font-size: 26px; font-weight: 500; line-height: 40px;}
+.solution-banner > dd {color: #fff; font-size: 16px; margin-left: 316px; line-height: 26px;}
+
+/*masterkey*/
+.masterkey {position: relative; margin-top: 80px; padding-bottom: 80px; background: #f8f8f8;}
+.masterkey:before {position: absolute; top: 150px; left: 0; width: 671px; height: 794px; background: url(../img/bg_solution_billoneq_1.png) no-repeat; content: '';}
+.masterkey:after {position: absolute; content: ''; right: 0; bottom: 0; width: 583px; height: 606px; background: url(../img/bg_solution_billoneq_2.png) no-repeat;}
+.masterkey-list {position: relative; z-index: 1;}
+.masterkey-item {position: relative; padding-bottom: 120px;}
+.masterkey-item:after {display: block; clear: both; content: '';}
+.masterkey-fig > img {box-shadow: 5px 5px 10px rgba(0,0,0,.2);}
+.masterkey-etc {position: absolute; left: 580px; bottom: 120px;}
+.masterkey-tit {color: #12ccc1; font-size: 18px; font-weight: 500;}
+.masterkey-txt {color: #000; font-size: 16px; font-weight: 300;}
+.masterkey-item-rev .masterkey-fig {padding-left: 560px;}
+.masterkey-item-rev .masterkey-etc {left: 0; width: 520px;}

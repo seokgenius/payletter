@@ -1,0 +1,40 @@
+@charset 'utf-8';
+
+.effect {
+    opacity:0;
+
+    &--active {
+        opacity:1;
+        transform: translateX(0) !important;
+        transform: translateY(0);
+    }
+}
+.effect--active {
+        opacity:1;
+        transform: translateY(0);
+    }
+
+.effect-up {
+    transform: translateY(50px);
+    transition:transform 1.2s cubic-bezier(.165,.84,.44,1),opacity 1.2s cubic-bezier(.165,.84,.44,1);
+}
+
+.effect-down {
+    transform: translateY(-50px);
+    transition:transform 1.2s cubic-bezier(.165,.84,.44,1),opacity 1.2s cubic-bezier(.165,.84,.44,1);
+}
+
+.effect-left {
+    transform: translateX(-50px);
+    transition:transform 1.2s cubic-bezier(.165,.84,.44,1),opacity 1.2s cubic-bezier(.165,.84,.44,1);
+}
+
+.effect-right {
+    transform: translateX(50px);
+    transition:transform 1.2s cubic-bezier(.165,.84,.44,1),opacity 1.2s cubic-bezier(.165,.84,.44,1);
+}
+
+.effect-visible {
+    transition: opacity 1.2s;
+    transition-delay: 7s;
+}
