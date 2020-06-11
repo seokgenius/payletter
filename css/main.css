@@ -14,7 +14,8 @@
 .main-video {position: relative; height: 834px; text-align: center;}
 .main-video .video-wrap {overflow: hidden; position: absolute; top: 0; left: 0; right: 0; bottom: 0;}
 .main-video .video-wrap video {height: 100%; object-fit: cover;}
-.main-video .banner-list {position: absolute; bottom: -100px; left: 50%; width: 1242px; margin-left: -621px; z-index: 10;}
+.main-video .banner-list {position: absolute; bottom: -100px; left: 50%; width: 1242px; margin-left: -621px; z-index: 10; opacity: 0; transition: opacity 1.2s; transition-delay: 7s;}
+.main-video .banner-list.load {opacity: 1;}
 .main-video .banner-list .banner-item {float: left; position: relative; width: calc(100% / 3); min-height: 400px; padding: 30px; text-align: left; box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3); box-sizing: border-box; background: #1e2233;}
 .main-video .banner-list .banner-item:before {opacity: .3; position: absolute; bottom: 50px; left: 30px; width: 134px; height: 104px; background-repeat: no-repeat; background-position: left bottom; transition: opacity .3s ease; content: '';}
 .main-video .banner-list .banner-item:hover:before {opacity: 1;}
@@ -29,9 +30,9 @@
 .main-video .banner-list .banner-item .btn-more:hover {transform: rotate(180deg);}
 .main-video .banner-list .banner-item .btn-more .more {overflow: hidden; position: absolute; width: 1px; height: 1px; padding: 0; border: 0; white-space: nowrap; clip: rect(0, 0, 0, 0); clip-path: inset(0 0 99.9% 99.9%);}
 .main-video .banner-list .solution {background: #12ccc1;}
-.main-video .banner-list .solution:before {background-image: url(../img/img_main_solution_1.png);}
+.main-video .banner-list .banner-item.solution:before {background-image: url(../img/img_main_solution_1.png);}
 .main-video .banner-list .service {background: #5817bb;}
-.main-video .banner-list .service:before {background-image: url(../img/img_main_solution_2.png);}
+.main-video .banner-list .banner-item.service:before {background-image: url(../img/img_main_solution_2.png);}
 .main-video .banner-list .service .btn-more {background: rgba(255,255,255,0.1);}
 .main-video .banner-list .service .btn-more:before {background: #fff;}
 .main-video .banner-list .service .btn-more:after {background: #fff;}
@@ -49,9 +50,13 @@
 .main-solution .solution-list:after {display: block; clear: both; content: '';}
 .main-solution .solution-list .solution-item {float: left; width: 50%; padding: 200px 0; box-sizing: border-box;}
 .main-solution .solution-list .solution-item:first-child {padding-right: 78px;}
-.main-solution .solution-list .solution-item span {color: #fff; font-size: 14px;}
-.main-solution .solution-list .solution-item h3 {color: #fd6763; font-size: 7.8rem; font-weight: 700; line-height: 7.8rem;}
-.main-solution .solution-list .solution-item .solution-slide {margin-top: 30px; border-top: 1px solid rgba(255, 255, 255, 0.1);}
+.main-solution .solution-list .solution-item span {color: #fff; font-size: 14px; transition: opacity 1.2s; opacity: 0;}
+.main-solution .solution-list .solution-item h3 {color: #fd6763; font-size: 7.8rem; font-weight: 700; line-height: 7.8rem; opacity: 0; transition: opacity 1.2s; transition-delay: 0.3s;}
+.main-solution .solution-list .solution-item .solution-slide {margin-top: 30px; border-top: 1px solid rgba(255, 255, 255, 0.1); transition: opacity 1.2s; opacity: 0; transition-delay: 0.6s;}
+.main-solution .solution-list .solution-item span.show,
+.main-solution .solution-list .solution-item h3.show,
+.main-solution .solution-list .solution-item .solution-slide.show {opacity: 1;}
+
 .main-solution .solution-list .solution-item .solution-slide .sol-cnt {width: 50px; height: 50px; margin-top: 56px; color: #fff; font-size: 24px; font-family: 'lato'; line-height: 50px; text-align: center; border-radius: 50%; background: #f8605c;}
 .main-solution .solution-list .solution-item .solution-slide .slide-container {box-sizing: border-box; position: relative; min-height: 400px; background-size: 1px 290px; background-position: 24px 40px; background-repeat: no-repeat;}
 .main-solution .slide-container .slide-list .slide-item {overflow: hidden; width: 472px; max-height: 380px;}
@@ -75,10 +80,14 @@
 /*main-aboutus*/
 .main-aboutus {background: url(../img/bg_main_aboutus.png) no-repeat left top;}
 .main-aboutus .desc {width: 1100px; margin: 0 auto; padding-top: 100px;}
-.main-aboutus .desc h3 {padding-bottom: 10px; color: #000; font-size: 40px; font-weight: 700; letter-spacing: -0.01em;}
-.main-aboutus .desc .text {color: #000; font-size: 16px; line-height: 30px;}
+.main-aboutus .desc h3 {padding-bottom: 10px; color: #000; font-size: 40px; font-weight: 700; letter-spacing: -0.01em; transition: opacity 1.2s; opacity: 0;}
+.main-aboutus .desc .text {color: #000; font-size: 16px; line-height: 30px; transition: opacity 1.2s; opacity: 0; transition-delay: 0.3s;}
 .main-aboutus .stat {width: 1100px; margin: -110px auto 0; padding-left: 480px; box-sizing: border-box;}
-.main-aboutus .stat .stat-list {display: inline-block; vertical-align: top;}
+.main-aboutus .stat .stat-list {display: inline-block; vertical-align: top; transition: opacity 1.2s; opacity: 0; transition-delay: 0.6s;}
+.main-aboutus .desc h3.show,
+.main-aboutus .desc .text.show,
+.main-aboutus .stat .stat-list.show {opacity: 1;}
+
 .main-aboutus .stat .stat-list .stat-item {float: left; margin: 0 25px 0 60px; text-align: center;}
 .main-aboutus .stat .stat-list .stat-item .stat-cate {display: block; padding-bottom: 30px; opacity: 0.5; color: #000; font-size: 16px; letter-spacing: -0.03em;}
 .main-aboutus .stat .stat-list .stat-item .stat-data {color: #000; font-weight: 700; font-family: 'lato';}
@@ -86,15 +95,18 @@
 .main-aboutus .contents {margin-top: 160px; padding-top: 100px; min-height: 800px; background: url(../img/img_main_aboutus_map.jpg) no-repeat right top; box-sizing: border-box;}
 .main-aboutus .contents .contents-area {width: 1100px; margin: 0 auto;}
 .main-aboutus .contents .contents-area .text-area {float: right; text-align: right; color: #fff;}
-.main-aboutus .contents .contents-area .text-area .contents-title {font-size: 66px; line-height: 86px;}
-.main-aboutus .contents .contents-area .text-area .contents-text {padding-top: 90px; font-size: 20px; font-weight: 300; letter-spacing: -0.03em;}
+.main-aboutus .contents .contents-area .text-area .contents-title {font-size: 66px; line-height: 86px; font-weight: bold; opacity: 0; transition: opacity 1.2s;}
+.main-aboutus .contents .contents-area .text-area .contents-text {padding-top: 90px; font-size: 20px; font-weight: 300; letter-spacing: -0.03em; opacity: 0; transition: opacity 1.2s; transition-delay: 0.6s;}
+.main-aboutus .contents .contents-area .text-area .contents-title.show,
+.main-aboutus .contents .contents-area .text-area .contents-text.show {opacity: 1;}
+
 
 /*main-news*/
 .main-news {overflow: hidden;}
 .main-news .desc {width: 1100px; margin: 0 auto; padding-top: 100px;}
 .main-news .desc h3 {padding-bottom: 10px; color: #000; font-size: 40px; font-weight: 700; letter-spacing: -0.01em;}
 
-.main-news .news-contents {width: 1100px; margin-top: -40px; padding-top: 70px;}
+.main-news .news-contents {width: 1120px; margin-top: -40px; padding-top: 70px;}
 /*.main-news .news-contents:before {opacity: 0.5; position: absolute; top: 0; left: 50%; width: calc((100%-1100px)/2); height: 100%; margin-left: -50%; background: #fff; z-index: 5; content: '';}
 .main-news .news-contents:after {opacity: 0.5; position: absolute; top: 0; right: 50%; width: calc((100%-1100px)/2); height: 100%; margin-right: -50%; background: #fff; z-index: 5; content: '';}*/
 .main-news .news-contents .news-list .news-item {max-width: 350px; margin-right: 24px;}
