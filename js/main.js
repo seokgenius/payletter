@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function(){    
   //top button animation
   $('.top').click(function() {
     $('html, body').animate({scrollTop : 0}, 500);
@@ -130,18 +130,6 @@ $(document).ready(function(){
             }
 
         var mainNewsSwiper = new Swiper ('.main-news .news-contents', options);
-  
-  
-  /*var mainNewsSwiper = new Swiper ('.main-news .news-contents', {
-            loop: true,
-            navigation: {
-                nextEl: '.news-contents .news-nav-next',
-                prevEl: '.news-contents .news-nav-prev'
-            },
-            autoplay : {
-                      delay: 5000,
-            },
-        });*/
   
   var noticeSwiper = new Swiper('.notice-contents', {
             loop: true,
