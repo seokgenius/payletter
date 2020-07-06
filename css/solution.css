@@ -68,16 +68,7 @@
 .case-tab-list .case-tab-item .case-tab-link {display: block; width: 112px; line-height: 38px; text-align: center; border: 1px solid #e5e5e5; border-radius: 40px; box-sizing: border-box;}
 .case-tab-list .case-tab-item .case-tab-link:hover, .case-tab-list .case-tab-item .case-tab-link.case-tab-active {color: #fff; background: #12ccc1; border: 1px solid #12ccc1;}
 .case-tab-list:after {display: block; clear: both; content: '';}
-
 .solution-case-item {height: 748px; text-align: center; background-image: url(../img/bg_solution_billoneq_slide1.jpg); background-repeat: no-repeat; background-position: center bottom; box-sizing: border-box; width: 100%;}
-/*.solution-case-item:nth-child(1) {background-image: url(../img/bg_solution_billoneq_slide1.jpg);}*/
-/*.solution-case-item:nth-child(2) {background-image: url(../img/bg_solution_billoneq_slide2.jpg);}
-.solution-case-item:nth-child(3) {background-image: url(../img/bg_solution_billoneq_slide3.jpg);}
-.solution-case-item:nth-child(4) {background-image: url(../img/bg_solution_billoneq_slide4.jpg);}
-.solution-case-item:nth-child(5) {background-image: url(../img/bg_solution_billoneq_slide5.jpg);}
-.solution-case-item:nth-child(6) {background-image: url(../img/bg_solution_billoneq_slide6.jpg);}
-.solution-case-item:nth-child(7) {background-image: url(../img/bg_solution_billoneq_slide7.jpg);}*/
-
 .case-title {padding: 45px 0 35px; color: #fff; font-size: 28px; font-weight: 300; line-height: 40px;}
 .case-title-list {display: inline-block; vertical-align: top;}
 .case-title-list:after {display: block; clear: both; content: '';}

@@ -1,4 +1,9 @@
 $(document).ready(function() {
+  //top button animation
+  $('.top').click(function() {
+    $('html, body').animate({scrollTop : 0}, 500);
+    return false;
+  });
   //.sub-gnb 고정
   $(window).scroll(function(event){
     var scroll = $(window).scrollTop();
