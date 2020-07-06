@@ -29,6 +29,7 @@
 .sub-gnb-sub .gnb-sub-list {display: inline-block;}
 .sub-gnb-sub .gnb-sub-item {float: left; margin: 0 50px; color: #888; font-size: 14px;}
 .sub-gnb-sub .gnb-sub-item:hover {color: #000;}
+.sub-gnb-sub .gnb-sub-item.scroll {color: #000;}
 
 /*solution-about*/
 .solution-about {padding-top: 70px;}

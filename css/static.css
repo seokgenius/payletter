@@ -7,20 +7,23 @@ body {min-width: 1200px; padding-top: 120px; color: #666; font: 1.6rem/1.5 'Noto
 [role=button], button {cursor: pointer;}
 
 /*header*/
+#wrap {width: 100%; overflow: hidden;}
+a#skip-nav {position: fixed; left: 0; top: -41px; width: 100%; line-height: 40px; text-align: center; font-size: 16px; color: #ffffff; background: rgba(0, 0, 0, 0.6); border-bottom: 1px solid #ffffff; z-index: 100000; transition: top 0.3s;}
+a#skip-nav:focus {top: 0;}
 header {position: fixed; top: 0; left: 0; width: 100%; z-index: 100;}
-header .head-cont {position: relative; min-width: 1200px; margin: 0 auto;}
+header .head-cont {position: relative; width: 100%; margin: 0 auto;}
 header .head-cont .head-logo {position: absolute; top: 0; left: 0;}
 header .head-cont .head-logo a {display: block; width: 200px; height: 80px; border-right: 1px solid #e5e5e5; background: url(../img/site_logo.png) no-repeat center; box-sizing: border-box;}
 header .head-menu {text-align: center; border-bottom: 1px solid #e5e5e5; box-sizing: border-box; background-image: linear-gradient(to bottom, #fff 0px, #fff 80px, #e5e5e5 80px, #e5e5e5 81px, #fff 81px, #fff 100%);}
-/*header .head-menu .head-menu-btn {display: none;}*/
 header .head-menu .head-menu-list {display: inline-block; vertical-align: top;}
 header .head-menu .head-menu-list .head-menu-item {float: left;}
 header .head-menu .head-menu-list .head-menu-item > a {display: block; height: 80px; padding: 30px 16px 0; box-sizing: border-box;}
 header .head-menu .head-menu-list .head-menu-item:hover > a {color: #000033;}
-header .head-menu .head-menu-list .head-menu-item .head-sub-list {overflow: hidden; opacity: 0; position: relative; height: 0; padding: 0 24px; text-align: left;}
-header .head-menu .head-menu-list .head-menu-item:hover .head-sub-list {opacity: 1; height: 100%; background: #efefef;}
-header .head-menu .head-menu-list .head-menu-item:hover .head-sub-list .head-sub-item {color: #003;}
-header .head-menu .head-menu-list .head-menu-item:hover .head-sub-list .head-sub-item:hover {color: #12ccc1;}
+header .head-menu .head-menu-list .head-menu-item:first-child .head-sub-list .head-sub-item:first-child a {background: yellow;}
+header .head-menu .head-menu-list .head-menu-item .head-sub-list {overflow: hidden; opacity: 0; position: relative; height: 0; padding: 0 24px; text-align: left; background: #efefef;}
+header .head-menu .head-menu-list .head-menu-item:hover .head-sub-list, header .head-menu .head-menu-list .head-menu-item:focus-within .head-sub-list {opacity: 1; height: 100%;}
+header .head-menu .head-menu-list .head-menu-item:hover .head-sub-list .head-sub-item, header .head-menu .head-menu-list .head-menu-item:focus-within .head-sub-list .head-sub-item {color: #003;}
+header .head-menu .head-menu-list .head-menu-item:hover .head-sub-list .head-sub-item:hover, header .head-menu .head-menu-list .head-menu-item:focus-within .head-sub-list .head-sub-item:focus-within {color: #12ccc1;}
 header .head-menu .head-menu-list .head-menu-item .head-sub-list .head-sub-item {position: relative; margin: 2px 0; padding: 5px 0;}
 header .head-menu .head-menu-list .head-menu-item:nth-child(1) .head-sub-list .head-sub-item {margin: 10px 0;}
 header .head-menu .head-menu-list .head-menu-item:nth-child(3) .head-sub-list .head-sub-item {margin: 15px 0;}
@@ -30,7 +33,7 @@ header .head-etc .head-etc-list {display: inline-block;}
 header .head-etc .head-etc-list .head-etc-item {float: left; margin: 17px 5px 0;}
 header .head-etc .head-etc-list .head-etc-item .etc-link {overflow: hidden; display: block; height: 46px; padding-left: 46px; font-size: 1.4rem; line-height: 46px; border-radius: 45px; box-sizing: border-box;}
 header .head-etc .head-etc-list .head-etc-item .contact {width: 46px; color: #fff; transition: width .4s ease; background: #12ccc1 url(../img/icon_gnb_email.png) no-repeat 12px center;}
-header .head-etc .head-etc-list .head-etc-item .contact:hover {width: 150px;}
+header .head-etc .head-etc-list .head-etc-item .contact:hover, header .head-etc .head-etc-list .head-etc-item .contact:focus-within {width: 150px;}
 header .head-etc .head-etc-list .head-etc-item .lang {width: 80px; color: #666; background: #e5e5e5 url(../img/icon_gnb_language.png) no-repeat 16px center;}
 
 /*quickmenu*/
